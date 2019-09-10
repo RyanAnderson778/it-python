@@ -1,0 +1,27 @@
+import random
+
+print("=======================")
+print("   GUESS MY NUMBER")
+print("  by Ryan Anderson")
+print("=======================")
+
+print("")
+name = input("What is your name? ")
+number = random.randint(0, 100)
+print("")
+
+print("I'm thinking of an integer between 0 and 100. Can you guess it?")
+
+guess = -1
+
+while guess != number:
+    guess_text = input("what is your guess? ")
+    guess = int(guess_text)
+
+    if guess < number:
+        print(f"sorry {name}, but your guess is too LOW. Try again.")
+    elif guess > number:
+        print(f"sorry {name}, but your guess is too HIGH. Try again.")
+    else:
+        print(f"You guessed it! Congratulations {name}")
+print("Thanks for playing!")
