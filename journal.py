@@ -13,6 +13,7 @@ def load(name):
             for entry in fin.readlines():
                 data.append(entry.rstrip())
     return data
+    loaded_entry = (entry, data)
 
 def save(name, data):
     filename = get_full_path(name)
