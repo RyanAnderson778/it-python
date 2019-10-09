@@ -85,4 +85,4 @@ while playagain != "N":
 
 time.sleep(.5)
 print("")
-print("Thank you for using the Pythragorean Calculator")
+print("Thank you for using the Pythagorean Calculator")
